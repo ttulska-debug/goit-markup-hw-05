@@ -170,6 +170,7 @@
 }
 
 .footer-button-subscribe:focus,
+.footer-button-subscribe:hover,
 .footer-button-subscribe:active {
     background-color: #31D0AA;
     outline: none;
