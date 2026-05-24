@@ -354,6 +354,11 @@
                 <!--#endregion portfolio -->
     
 </main>
+
+
+
+
+
     
 <footer class="footer-block" id="footer">
     <div class="container footer-container">
@@ -362,6 +367,7 @@
             <a href="./index.html" class="footer-logo"><span class="color-accent">Web</span>Studio</a>
             <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
+
 
         <div class="footer-social-link">
 
@@ -396,11 +402,120 @@
                         <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                     </a>
-                 </li>
+                </li>
             </ul>
         </div>
+
+        <div class="footer-subscribe">
+            <p class="footer-subscribe-name">Subscribe</p>
+            
+            <div class="footer-subscribe-form">
+                
+                <input type="email"
+                    name="e-mail"
+                    id="footer-subscribe-form"
+                    class="footer-input-email"
+                    placeholder="E-mail">
+
+                <button class="footer-button-subscribe" type="submit">
+                Subscribe
+                    <svg width="24" height="24" class="footer-button-icon">
+                    <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
     </div>
 </footer>
+
+
+<div class="backdrop">
+    <div class="modal">
+        <button class="modal-close-popup" type="button">
+            <svg width="8" height="8" class="popup-icon-close">
+            <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form>
+            <div class="popup-wrapper">
+                <label for="form-name" class="popup-label">Name</label>
+
+                <div class="popup-input-wrapper">
+                    <input class="popup-input-text"
+                        type="text"
+                        name="form-name"
+                        id="input-name"
+                        autofocus>
+                    <svg width="18" height="24" class="form-icon">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="popup-wrapper">
+                <label for="form-phone" class="popup-label">Phone</label>
+
+                <div class="popup-input-wrapper">
+                    <input class="popup-input-text"
+                        type="tel"
+                        name="form-phone"
+                        id="input-tel">
+                    <svg width="18" height="24" class="form-icon">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+
+            </div>
+            
+             <div class="popup-wrapper">
+                <label for="form-email" class="popup-label">Email</label>
+
+                <div class="popup-input-wrapper">
+                    <input class="popup-input-text"
+                        type="email"
+                        name="form-email"
+                        id="input-email">
+                    <svg width="18" height="24" class="form-icon">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="popup-comment">
+                <label for="form-comment-label" class="popup-label">Comment</label>
+                    <textarea id="popup-comment-form" 
+                    name="form-comment-label" 
+                    class="popup-textarea"
+                    placeholder="Text input"></textarea> 
+            </div>
+
+                <div class="popup-privacy">
+                    <input type="checkbox" 
+                    name="form-checkbox"
+                    id="form-checkbox"
+                    class="native-checkbox sr-only">
+                
+                    <label for="form-checkbox" class="label-checkbox">
+                    <span class="popup-checkbox-icon">
+                        <svg height="8" width="10" class="popup-icon-check">
+                            <use href="./images/icons.svg#icon-check-mark" />
+                        </svg>
+                    </span>
+                    <span class="popup-privacy-text">I accept the terms and conditions of the <a href="#" class="popup-privacy-decoration">Privacy Policy</a></span>
+                    </label>
+
+                </div>
+
+                <button type="submit" class="popup-button">Send</button>
+
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
