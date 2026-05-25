@@ -19,7 +19,7 @@
     pointer-events: auto;
 }
 
-.modal {
+.modal-popup {
     position: relative;
     background-color: #FCFCFC;
     width: 408px;
