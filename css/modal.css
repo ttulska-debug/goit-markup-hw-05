@@ -9,8 +9,8 @@
     left: 0;
     background-color:rgba(46, 47, 66, 0.4);
     z-index: 999999999;
-    opacity: 0;
-    pointer-events: none;
+    /* opacity: 0; */
+    /* pointer-events: none; */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -51,7 +51,11 @@
     outline: none; 
 }
 
-.modal-close-popup:hover,
+.modal-close-popup:hover > .popup-icon-close {
+    fill: #FFFFFF;
+    outline: none;
+}
+
 .modal-close-popup:focus > .popup-icon-close {
     fill: #FFFFFF;
     outline: none;
@@ -115,8 +119,8 @@
 .popup-input-text:hover,
 .popup-input-text:focus {
     border: 1px solid #4D5AE5;
-    outline: none;
-}
+    outline: none; 
+} 
 
 .popup-input-text:hover,
 .popup-input-text:focus + .form-icon {

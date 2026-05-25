@@ -145,6 +145,7 @@
 }
 
 .footer-input-email:focus,
+.footer-input-email:hover,
 .footer-input-email:active {
     border: 1px solid #31D0AA;
 }
