@@ -18,7 +18,7 @@
 .backdrop.is-open {
     opacity: 1;
     pointer-events: auto;
-    visibility: visible
+    visibility: visible;
 }
 
 .modal-popup {
