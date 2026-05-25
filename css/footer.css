@@ -131,21 +131,18 @@
     line-height: 2;
     letter-spacing: 0.04em;
     color:#FFFFFF;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input-email::placeholder{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
     color: #FFFFFF;
+    border-color: none;
 }
 
 .footer-input-email:focus,
 .footer-input-email:hover,
 .footer-input-email:active {
-    border: 1px solid #31D0AA;
+    border-color: #31D0AA;
 }
 
 .footer-button-subscribe {

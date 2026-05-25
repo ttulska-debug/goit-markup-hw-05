@@ -9,14 +9,16 @@
     left: 0;
     background-color:rgba(46, 47, 66, 0.4);
     z-index: 999999999;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 0; 
+    pointer-events: none; 
+    visibility: hidden;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .is-open {
+.backdrop.is-open {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible
 }
 
 .modal-popup {
@@ -32,6 +34,9 @@
 }
 
 .modal-close-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position:absolute;
     top:24px;
     right: 24px;
@@ -63,10 +68,6 @@
 
 .popup-icon-close {
     fill: #2E2F42;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:0 auto;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -96,7 +97,7 @@
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
 }
@@ -111,15 +112,16 @@
     padding-left: 38px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .popup-input-text:hover,
 .popup-input-text:focus {
-    border: 1px solid #4D5AE5;
-    outline: none; 
+    border-color:#4D5AE5;
+    outline: none;
+   
 } 
 
 .popup-input-text:hover+ .form-icon {
@@ -152,25 +154,26 @@
     color: #2E2F42;
     font-weight: 400;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     resize: none;
-    transition: border ;
+    transition: border;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .popup-textarea::placeholder{
     font-weight: 400;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color:rgba(46, 47, 66, 0.4);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    
 }
 
 .popup-textarea:hover,
 .popup-textarea:focus{
     outline: none;
-    border: 1px solid #4D5AE5;
+    border-color:#4D5AE5;
 }
 
 .label-checkbox {
@@ -183,6 +186,7 @@
 .popup-checkbox-icon {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .popup-icon-check{
@@ -203,7 +207,7 @@
 
 .native-checkbox:focus + .label-checkbox > .popup-checkbox-icon {
 
-    border: 1px solid #404BBF;
+    border-color:#404BBF;
 }
 
 .popup-checkbox-icon {
@@ -223,7 +227,7 @@
 .popup-privacy-text{
     font-weight: 400;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color:#8E8F99;
 } 
@@ -240,8 +244,8 @@
     margin: 0 auto;
     border-radius: 4px;
     padding: 16px 65px;
-    max-width: 169px;
-    max-height: 56px;
+    width: 169px;
+    height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4D5AE5;
     cursor: pointer;
